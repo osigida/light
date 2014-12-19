@@ -9,9 +9,10 @@ GPIO.setmode(GPIO.BOARD)
 #GPIO.setup(channel, GPIO.OUT, initial=GPIO.LOW)
 
 
-chan_list = (11,7)
-GPIO.setup(11, GPIO.OUT, initial=False)
+chan_list = (11)
+GPIO.setup(11, GPIO.OUT, initial=GPIO.LOW)
 GPIO.output(11, GPIO.LOW) # all LOW
+time.sleep(2)
 #GPIO.cleanup()
 
 # time.sleep(2)
