@@ -13,7 +13,12 @@ chan_list = (11)
 GPIO.setup(11, GPIO.OUT, initial=GPIO.LOW)
 GPIO.output(11, GPIO.LOW) # all LOW
 time.sleep(2)
-#GPIO.cleanup()
+GPIO.output(11, GPIO.HIGH) # all LOW
+time.sleep(2)
+GPIO.output(11, GPIO.LOW) # all LOW
+time.sleep(2)
+
+GPIO.cleanup()
 
 # time.sleep(2)
 # GPIO.setup(12, GPIO.OUT)
