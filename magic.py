@@ -10,7 +10,7 @@ GPIO.setmode(GPIO.BOARD)
 
 
 chan_list = (11)
-GPIO.setup(11, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(11, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.output(11, GPIO.LOW) # all LOW
 time.sleep(2)
 GPIO.output(11, GPIO.HIGH) # all LOW
